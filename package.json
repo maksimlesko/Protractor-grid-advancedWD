@@ -1,0 +1,12 @@
+{
+  "name": "Protractor-grid-advancedWD",
+  "version": "0.0.1",
+  "description": "tests for answerconnect application",
+
+  "scripts": {
+    "grid-hub": "java -jar selenium-server-standalone-3.4.0.jar -role hub",
+    "grid-node": "java -Dwebdriver.chrome.driver=./grid/webdriver/chromedriver.exe -jar selenium-server-standalone-3.4.0.jar -role node -hub http://localhost:4444/grid/register -browser \"browserName=chrome,version=59,maxinstance=5,platform=WINDOWS\" -port 5557",
+    "e2e": "protractor config/conf.js"
+  }
+  
+}
